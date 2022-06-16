@@ -5,7 +5,7 @@ export default function pokemon({ pokeman }) {
   return (
     <Layout title={pokeman.name}>
       <h1 className='text-4xl mb-2 text-center capitalize'>
-        {pokeman.id}. {pokeman.name}
+        {pokeman.name}
       </h1>
       <img className='mx-auto' src={pokeman.image} alt={pokeman.name} />
       <p>

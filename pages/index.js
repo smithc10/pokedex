@@ -10,13 +10,13 @@ export default function Home({ pokemon }) {
           return (
             <li key={index}>
               <Link href={`/pokemon?id=${index + 1}`}>
-                <a className='border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200'>
+                <a className='border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200 dark:bg-slate-600 text-black dark:text-white'>
                   <img
                     className='w-20 h20 mr-3'
                     src={pokeman.image}
                     alt={pokeman.name}
                   ></img>
-                  <span className='mr-2'>{index + 1}.</span>
+                  <span className='mr-2'></span>
                   {pokeman.name}
                 </a>
               </Link>
