@@ -12,7 +12,7 @@ export default function Layout({title, children}){
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
             </Head>
-            <main className='container mx-auto max-w-xl pt-8 min-h-screen'>
+            <main className='container mx-auto sm:max-w-xl md:max-w-none pt-8 p-10 min-h-screen'>
                 {children}
             </main>
         </div>

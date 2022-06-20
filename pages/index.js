@@ -5,9 +5,10 @@ export default function Home({ pokemon }) {
   return (
     <Layout title="Connor's Pokedex">
       <h1 className='text-3xl mb-8 text-center'>Connor's Pokedex</h1>
-      <ul>
+      <ul className='md:grid md:grid-cols-3'>
         {pokemon.map((pokeman, index) => {
           return (
+            <div className='p-8'>
             <li key={index}>
               <Link href={`/pokemon?id=${index + 1}`}>
                 <a className='border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200 dark:bg-slate-600 text-black dark:text-white'>
@@ -21,6 +22,7 @@ export default function Home({ pokemon }) {
                 </a>
               </Link>
             </li>
+            </div>
           );
         })}
       </ul>

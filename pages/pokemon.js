@@ -6,7 +6,7 @@ export default function pokemon({ pokeman }) {
     <Layout title={pokeman.name}>
       <h1 className='text-4xl mb-2 text-center capitalize'>{pokeman.name}</h1>
       <img className='mx-auto' src={pokeman.image} alt={pokeman.name} />
-      <div className='dark:bg-slate-700 p-4 mb-2 text-lg'>
+      <div className='bg-gray-200 dark:bg-slate-700 p-4 mb-2 text-lg'>
         <p>
           <span className='font-bold mr-2'>Weight:</span>
           {pokeman.weight}
@@ -16,8 +16,8 @@ export default function pokemon({ pokeman }) {
           {pokeman.height}
         </p>
       </div>
-      <div className='dark:bg-slate-700 p-4 mt-6 text-lg'>
-        <h2 className='text-2xl mb-2'>Types</h2>
+      <div className='bg-gray-200 dark:bg-slate-700 p-4 mt-6 text-lg'>
+        <h2 className='text-2xl mb-2 dark:text-white'>Types</h2>
         {pokeman.types.map((type, index) => (
           <p className='capitalize pl-1' key='index'>
             <li className='mt-1'>{type.type.name}</li>
